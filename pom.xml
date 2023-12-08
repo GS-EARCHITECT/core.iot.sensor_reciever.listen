@@ -11,10 +11,10 @@
 	</parent>
 
 	<groupId>myABC</groupId>
-	<artifactId>core.iot.admin</artifactId>
+	<artifactId>core.iot.sensor_reciever.listen</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>core.iot.admin</name>
+	<name>core.iot.sensor_reciever.listen</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -43,6 +43,17 @@
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-mongodb</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.kafka</groupId>
+			<artifactId>spring-kafka</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.kafka</groupId>
+			<artifactId>kafka-streams</artifactId>
+		</dependency>
+
 
 		<dependency>
 			<groupId>com.oracle</groupId>
@@ -77,6 +88,6 @@
 			</plugin>
 		</plugins>
 
-		<finalName>core.iot.admin</finalName>
+		<finalName>core.iot.sensor_reciever.listen</finalName>
 	</build>
 </project>
